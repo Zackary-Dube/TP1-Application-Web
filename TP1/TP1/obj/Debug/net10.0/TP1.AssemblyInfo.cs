@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("TestTP1")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("TP1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13033592b29f0cff09e80e508d0904f211967615")]
-[assembly: System.Reflection.AssemblyProductAttribute("TestTP1")]
-[assembly: System.Reflection.AssemblyTitleAttribute("TestTP1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+086b78aa4c68a83f4828c89fbf1daeb1bafde09d")]
+[assembly: System.Reflection.AssemblyProductAttribute("TP1")]
+[assembly: System.Reflection.AssemblyTitleAttribute("TP1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Généré par la classe MSBuild WriteCodeFragment.
