@@ -5,192 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20a4f033-33d5-4fef-a55d-33b6e8b802a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.sourcelink.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/apphost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/ref/TP1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/refint/TP1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Microsoft.ApplicationInsights.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Microsoft.TestPlatform.CommunicationUtilities.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Microsoft.TestPlatform.CoreUtilities.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Microsoft.TestPlatform.CrossPlatEngine.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Microsoft.TestPlatform.PlatformAbstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Microsoft.TestPlatform.Utilities.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Microsoft.Testing.Extensions.MSBuild.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Microsoft.Testing.Extensions.Telemetry.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Microsoft.Testing.Extensions.TrxReport.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Microsoft.Testing.Extensions.VSTestBridge.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Microsoft.Testing.Platform.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Microsoft.VisualStudio.TestPlatform.Common.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/NUnit3.TestAdapter.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/NUnit3.TestAdapter.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TestTP1.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TestTP1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TestTP1.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TestTP1.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/cs/Microsoft.Testing.Extensions.MSBuild.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/cs/Microsoft.Testing.Extensions.Telemetry.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/cs/Microsoft.Testing.Extensions.VSTestBridge.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/cs/Microsoft.Testing.Platform.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/de/Microsoft.Testing.Extensions.MSBuild.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/de/Microsoft.Testing.Extensions.Telemetry.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/de/Microsoft.Testing.Extensions.VSTestBridge.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/de/Microsoft.Testing.Platform.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/es/Microsoft.Testing.Extensions.MSBuild.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/es/Microsoft.Testing.Extensions.Telemetry.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/es/Microsoft.Testing.Extensions.VSTestBridge.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/es/Microsoft.Testing.Platform.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/fr/Microsoft.Testing.Extensions.MSBuild.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/fr/Microsoft.Testing.Extensions.Telemetry.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/fr/Microsoft.Testing.Extensions.VSTestBridge.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/fr/Microsoft.Testing.Platform.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/it/Microsoft.Testing.Extensions.MSBuild.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/it/Microsoft.Testing.Extensions.Telemetry.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/it/Microsoft.Testing.Extensions.VSTestBridge.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/it/Microsoft.Testing.Platform.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ja/Microsoft.Testing.Extensions.MSBuild.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ja/Microsoft.Testing.Extensions.Telemetry.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ja/Microsoft.Testing.Extensions.VSTestBridge.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ja/Microsoft.Testing.Platform.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ko/Microsoft.Testing.Extensions.MSBuild.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ko/Microsoft.Testing.Extensions.Telemetry.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ko/Microsoft.Testing.Extensions.VSTestBridge.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ko/Microsoft.Testing.Platform.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/nunit.engine.api.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/nunit.engine.core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/nunit.engine.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/nunit.framework.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/nunit.framework.legacy.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pl/Microsoft.Testing.Extensions.MSBuild.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pl/Microsoft.Testing.Extensions.Telemetry.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pl/Microsoft.Testing.Extensions.VSTestBridge.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pl/Microsoft.Testing.Platform.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pt-BR/Microsoft.Testing.Extensions.MSBuild.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pt-BR/Microsoft.Testing.Extensions.Telemetry.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pt-BR/Microsoft.Testing.Extensions.VSTestBridge.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pt-BR/Microsoft.Testing.Platform.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ru/Microsoft.Testing.Extensions.MSBuild.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ru/Microsoft.Testing.Extensions.Telemetry.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ru/Microsoft.Testing.Extensions.VSTestBridge.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ru/Microsoft.Testing.Platform.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/testcentric.engine.metadata.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/testhost.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/testhost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/tr/Microsoft.Testing.Extensions.MSBuild.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/tr/Microsoft.Testing.Extensions.Telemetry.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/tr/Microsoft.Testing.Extensions.VSTestBridge.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/tr/Microsoft.Testing.Platform.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hans/Microsoft.Testing.Extensions.MSBuild.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hans/Microsoft.Testing.Extensions.Telemetry.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hans/Microsoft.Testing.Extensions.VSTestBridge.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hans/Microsoft.Testing.Platform.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hant/Microsoft.Testing.Extensions.MSBuild.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hant/Microsoft.Testing.Extensions.Telemetry.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hant/Microsoft.Testing.Extensions.VSTestBridge.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hant/Microsoft.Testing.Platform.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.csproj.Up2Date" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.sourcelink.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/ref/TestTP1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/refint/TestTP1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestTP1/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP1_Loterie_partageTaches.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP1/Billeterie/AbstractBillet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP1/Billeterie/Loterie.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TP1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/BilletCombinaison.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/TypeBillets/BilletCombinaison.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/ref/TP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/ref/TP1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/refint/TP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/refint/TP1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/TP1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/TP1.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/TP1.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/TP1.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/obj/TestTP1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/TestTP1.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/obj/TestTP1.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/TestTP1.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/TP1/Options/TypeBillet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TP1/TypeBillets/BilletSequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestTP1/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -202,15 +71,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.TP1.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "ilias",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="TP1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -243,6 +114,7 @@
       <updated>1770658292616</updated>
       <workItem from="1770658297623" duration="66000" />
       <workItem from="1770658657189" duration="382000" />
+      <workItem from="1771093465749" duration="9713000" />
     </task>
     <servers />
   </component>

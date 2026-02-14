@@ -1,4 +1,7 @@
-﻿namespace TP1;
+﻿using System;
+using System.Collections.Generic;
+
+namespace TP1;
 
 public class BilletCombinaison
 {

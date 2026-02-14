@@ -615,6 +615,16 @@
           "build/netcoreapp3.1/NUnit3TestAdapter.props": {},
           "build/netcoreapp3.1/NUnit3TestAdapter.targets": {}
         }
+      },
+      "TP1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/TP1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TP1.dll": {}
+        }
       }
     }
   },
@@ -1504,6 +1514,11 @@
         "nunit3testadapter.nuspec",
         "nunit_256.png"
       ]
+    },
+    "TP1/1.0.0": {
+      "type": "project",
+      "path": "../TP1/TP1.csproj",
+      "msbuildProject": "../TP1/TP1.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1512,23 +1527,29 @@
       "NUnit >= 4.3.2",
       "NUnit.Analyzers >= 4.7.0",
       "NUnit3TestAdapter >= 5.0.0",
+      "TP1 >= 1.0.0",
       "coverlet.collector >= 6.0.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zacka\\.nuget\\packages\\": {}
+    "C:\\Users\\zacka\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zacka\\Desktop\\SESSION-6\\Application web I\\TPs\\TP1-Application-Web\\TP1\\TestTP1\\TestTP1.csproj",
+      "projectUniqueName": "C:\\Users\\zacka\\OneDrive\\Bureau\\SESSION-6\\Application web I\\TPs\\TP1-Application-Web\\TP1\\TestTP1\\TestTP1.csproj",
       "projectName": "TestTP1",
-      "projectPath": "C:\\Users\\zacka\\Desktop\\SESSION-6\\Application web I\\TPs\\TP1-Application-Web\\TP1\\TestTP1\\TestTP1.csproj",
+      "projectPath": "C:\\Users\\zacka\\OneDrive\\Bureau\\SESSION-6\\Application web I\\TPs\\TP1-Application-Web\\TP1\\TestTP1\\TestTP1.csproj",
       "packagesPath": "C:\\Users\\zacka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zacka\\Desktop\\SESSION-6\\Application web I\\TPs\\TP1-Application-Web\\TP1\\TestTP1\\obj\\",
+      "outputPath": "C:\\Users\\zacka\\OneDrive\\Bureau\\SESSION-6\\Application web I\\TPs\\TP1-Application-Web\\TP1\\TestTP1\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\zacka\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\zacka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -1539,7 +1560,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\zacka\\OneDrive\\Bureau\\SESSION-6\\Application web I\\TPs\\TP1-Application-Web\\TP1\\TP1\\TP1.csproj": {
+              "projectPath": "C:\\Users\\zacka\\OneDrive\\Bureau\\SESSION-6\\Application web I\\TPs\\TP1-Application-Web\\TP1\\TP1\\TP1.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
