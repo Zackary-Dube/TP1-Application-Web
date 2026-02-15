@@ -1,28 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
+using TP1.Billeterie;
 
 namespace TP1.ChainOfResponsibility;
 
-using TP1.Billeterie;
-using TP1.Options;
-
 public class LancerTirageHandler : AbstractHandler
 {
-    private Random random_mg;
-    
-    public int numero { get; set; }
-
     public LancerTirageHandler()
     {
-        //random_mg = new Random();
+        
     }
 
     public override void Handle(Dictionary<string, object> dictionnaire)
     {
+        if ((TypeBillet)dictionnaire["billetType"] == TypeBillet.Sequence)
+        {
+            dictionnaire["BilletsTire"] = creationUnBilletSequence((int)dictionnaire["ValeurMaximumSimpleNumero"]);
+        } else if ((TypeBillet) dictionnaire["typeBillet"] == TypeBillet.Combinaison)
+        {
+            
+            
+            
+            
+        }
+        
+        
         dictionnaire["message"] += "LancerTirage";
 
         base.Handle(dictionnaire);
-
-
     }
+    
+    public AbstractBillet creationUnBilletSequence(int valeurMaximum)
+    {
+        BilletSequence billet = new BilletSequence();
+        billet.TrouveNumeroBilletAutomatique(valeurMaximum);
+        return billet;
+    }
+    
 }

@@ -2,6 +2,8 @@
 
 public abstract class AbstractBillet
 {
+    private static int idUtilise;
+    public const int NOMBRE_NUMERO_BILLET = 6;
     /// <summary>
     /// Billet de lotterie avec un numero
     /// </summary>
@@ -11,6 +13,13 @@ public abstract class AbstractBillet
     /// Prix du billet (2$)
     /// </summary>
     public const int PRIX_BILLETS = 2;
+
+    public AbstractBillet()
+    {
+        Id = idUtilise++;
+    }
+    
+    
     
     
     

@@ -10,20 +10,19 @@ public class AcheterBilletHandler : AbstractHandler
 {
     public AcheterBilletHandler()
     {
+        
     }
     
     public override void Handle(Dictionary<string, object> dictionnaire)
     {
-        
         if ((TypeBillet) dictionnaire["billetType"] == TypeBillet.Sequence)
         {
-            AbstractBillet abstractBillet = new AbstractBilletSequence(TrouveNumeroBilletAutomatique((int)dictionnaire["nombreNumero"]));
-            List<AbstractBillet> listeBillet = new List<AbstractBillet>();
-            
-            listeBillet = (List<AbstractBillet>)dictionnaire["listeBillets"];
-            listeBillet.Add(abstractBillet);
-            dictionnaire["listeBillets"] =  listeBillet;
-            
+            List<AbstractBillet> listeBillet = (List<AbstractBillet>) dictionnaire["listeBillets"];
+            for (int i = 0; i < (int)dictionnaire["nombreBilletVendu"]; i++)
+            {
+                listeBillet.Add(creationUnBilletSequence((int)dictionnaire["ValeurMaximumSimpleNumero"]));
+            }
+            dictionnaire["listeBillets"] = listeBillet;
         } else if ((TypeBillet) dictionnaire["typeBillet"] == TypeBillet.Combinaison)
         {
             
@@ -34,14 +33,21 @@ public class AcheterBilletHandler : AbstractHandler
         base.Handle(dictionnaire);
     }
 
-    public List<int> TrouveNumeroBilletAutomatique(int nombreNumero)
+    /// <summary>
+    /// Creation d'un billet sequence et mise a jour de la liste de billet
+    /// </summary>
+    /// <param name="dictionnaire">passe le dictionnaire avec toutes les donnees</param>
+    public AbstractBillet creationUnBilletSequence(int valeurMaximum)
     {
-        Random random = new Random();
-        List<int> listeNumero = new List<int>();
-        for (int i = 0; i < nombreNumero; i++)
-        {
-            listeNumero.Add(random.Next(9));
-        }
-        return listeNumero;
+        BilletSequence billet = new BilletSequence();
+        billet.TrouveNumeroBilletAutomatique(valeurMaximum);
+        return billet;
     }
+    public void creationBilletCombinaison()
+    {
+        
+        
+        
+    }
+    
 }

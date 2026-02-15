@@ -31,18 +31,19 @@ o Le type de billets tirés
 */
         Loterie loterie = new Loterie();
         Dictionary<string, object> dictionaire = new Dictionary<string, object>();
-        List<int> numeroTire = new List<int>();
         List<double> montantGagne = new List<double>();
-        List<AbstractBillet> billets = new List<AbstractBillet>();
+        List<AbstractBillet> Listebillets = new List<AbstractBillet>();
+        AbstractBillet billetsTire = new BilletSequence();
 
         dictionaire.Add("billetType", TypeBillet.Sequence);
-        dictionaire.Add("nombreTirageAFaire", 100);
-        dictionaire.Add("tableauDesNumeroTires", numeroTire);
+        dictionaire.Add("nombreBilletVendu", 100);
+        dictionaire.Add("nombreTirageAFaire", 10);
         dictionaire.Add("listeMontantGagne", montantGagne);
-        dictionaire.Add("listeBillets", billets);
+        dictionaire.Add("listeBillets", Listebillets);
+        dictionaire.Add("billetsTire", billetsTire);
         dictionaire.Add("loterie", loterie);
-        dictionaire.Add("nombreNumero", 6);
         dictionaire.Add("message", "message");
+        dictionaire.Add("ValeurMaximumSimpleNumero", 9);
 
         IHandler chainHandler = new AcheterBilletHandler();
         
@@ -50,20 +51,26 @@ o Le type de billets tirés
                     .Next(new VoirGainsHandler());
 
         chainHandler.Handle(dictionaire);
-        billets = (List<AbstractBillet>) dictionaire["listeBillets"];
-
-        Console.WriteLine(billets);
-
-        foreach (AbstractBillet billet in billets)
+        Listebillets = (List<AbstractBillet>) dictionaire["listeBillets"];
+        billetsTire = (AbstractBillet) dictionaire["BilletsTire"];
+        
+        
+        
+        
+        
+        
+        Console.WriteLine("---- Billet distribuer ----");
+        foreach (AbstractBillet billet in Listebillets)
         {
-            List<int> numeros = ((AbstractBilletSequence) billet).ListeNumero;
-            
+            List<int> numeros = ((BilletSequence) billet).ListeNumero;
             Console.WriteLine(string.Join(",", numeros));
         }
         
-        
-        
+        Console.WriteLine("---- Billet tire ----");
+        List<int> numerosTire = ((BilletSequence) billetsTire).ListeNumero;
+        Console.WriteLine(string.Join(",", numerosTire));
 
+       
 
 
 
