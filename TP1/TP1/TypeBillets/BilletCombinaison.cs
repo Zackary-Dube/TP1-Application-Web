@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using TP1.Billeterie;
 
 namespace TP1;
 
-public class BilletCombinaison
+/// <summary>
+/// Représente un billet de type combinaison
+/// </summary>
+public class BilletCombinaison : AbstractBillet
 {
     private List<int> _numeros = new List<int>();
     
@@ -22,6 +26,9 @@ public class BilletCombinaison
         Numeros = numeros;
     }
 
+    /// <summary>
+    /// Genere 6 numéros aléatoire unique.
+    /// </summary>
     public void GenererNumeros()
     {
         while (Numeros.Count < 6)
@@ -34,6 +41,12 @@ public class BilletCombinaison
         }
     }
 
+    /// <summary>
+    /// Compare le billet du client et le billet du tirage.
+    /// </summary>
+    /// <param name="tirage">Billet du tirage</param>
+    /// <param name="client">Billet du client</param>
+    /// <returns>Le nombre de numéro gagnant</returns>
     public int ComparerBillets(BilletCombinaison tirage, BilletCombinaison client)
     {
         int compteur = 0;
