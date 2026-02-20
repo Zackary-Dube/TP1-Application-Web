@@ -59,4 +59,21 @@ public class BilletCombinaison : AbstractBillet
         }
         return compteur;
     }
+
+    /// <summary>
+    /// Calcule les gains du client
+    /// </summary>
+    /// <param name="tirage">Billet du tirage</param>
+    /// <param name="client">Billet du client</param>
+    public void CalculerGain(BilletCombinaison tirage, BilletCombinaison client)
+    {
+        Gain = ComparerBillets(tirage, client) switch
+        {
+            3 => 5,
+            4 => 20,
+            5 => 100,
+            6 => 1000,
+            _ => 0
+        };
+    }
 }

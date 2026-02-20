@@ -13,6 +13,8 @@ public abstract class AbstractBillet
     /// Prix du billet (2$)
     /// </summary>
     public const int PRIX_BILLETS = 2;
+    
+    public int Gain { get; set; }
 
     public AbstractBillet()
     {
