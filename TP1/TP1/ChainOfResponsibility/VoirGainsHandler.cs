@@ -16,13 +16,9 @@ public class VoirGainsHandler : AbstractHandler
         if ((TypeBillet) dictionnaire["billetType"] == TypeBillet.Sequence)
         {
             
-            List<AbstractBillet> listeBillet = (List<AbstractBillet>) dictionnaire["listeBillets"];
-            AbstractBillet billetTire = (AbstractBillet) dictionnaire["billetsTire"];
-            foreach (AbstractBillet billet in listeBillet)
-            {
-                
-            }
+            ((Loterie) dictionnaire["loterie"]).CalculeGain();
             
+         
             
             
             

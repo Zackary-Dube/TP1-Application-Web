@@ -15,7 +15,8 @@ public class LancerTirageHandler : AbstractHandler
     {
         if ((TypeBillet)dictionnaire["billetType"] == TypeBillet.Sequence)
         {
-            dictionnaire["BilletsTire"] = creationUnBilletSequence((int)dictionnaire["ValeurMaximumSimpleNumero"]);
+            ((Loterie) dictionnaire["loterie"]).LancerTirage();
+            
         } else if ((TypeBillet) dictionnaire["typeBillet"] == TypeBillet.Combinaison)
         {
             
@@ -24,17 +25,16 @@ public class LancerTirageHandler : AbstractHandler
             
         }
         
-        
-        dictionnaire["message"] += "LancerTirage";
-
         base.Handle(dictionnaire);
     }
-    
+
+    /*
     public AbstractBillet creationUnBilletSequence(int valeurMaximum)
     {
         BilletSequence billet = new BilletSequence();
         billet.TrouveNumeroBilletAutomatique(valeurMaximum);
         return billet;
     }
+    */
     
 }

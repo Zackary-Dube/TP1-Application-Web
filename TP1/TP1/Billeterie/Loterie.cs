@@ -7,32 +7,77 @@ namespace TP1.Billeterie;
 
 public class Loterie
 {
-    /// <summary>
-    /// Liste de tout les billets
-    /// </summary>
-    private List<AbstractBillet> billets = new();
+    private List<AbstractBillet> _listeBillets = new();
+    
+    public AbstractBillet BilletTire { get; set; }
+    public double Gain { get; set; }
+    public double Revenu {get; set;}
+    
+    public void AjouterBilletListe(AbstractBillet billet)
+    {
+        _listeBillets.Add(billet);
+        Revenu += AbstractBillet.PRIX_BILLETS;
+    } 
+    
+    public void LancerTirage()
+    {
+        AbstractBillet billetTire = new BilletSequence();
+        BilletTire =  billetTire;
+    }
+
+    public void CalculeGain()
+    {
+        foreach (AbstractBillet billet in _listeBillets)
+        {
+            Gain += billet.CalculerGainSiGagnant(BilletTire);
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     /// <summary>
     /// Mise en place de la variable du numero gagnant
     /// </summary>
     private int numeroGagnant = -1;
     
-    
-    
     /// <summary>
     /// Lancement du tirage et appliquer la valeur du numero gagnant a la variable numero gagnant
     /// </summary>
     /// <param name="numero">donne le numero gagnant</param>
-    public void LancerTirage(int numero)
-    {
-        numeroGagnant = numero;
-        Console.WriteLine($"Numero gagnant : {numeroGagnant}");
-    }
+    
 
-    public void AjouterBillet(AbstractBillet abstractBillet)
-    {
-        billets.Add(abstractBillet);
-    }
+ 
 
     /// <summary>
     /// Dit si le billet est gagnant
@@ -48,17 +93,11 @@ public class Loterie
     /// pour avoir le nombre de billets vendus
     /// </summary>
     /// <returns>nombre de billets vendus en tout</returns>
-    public int NombreBilletVendus()
-    {
-        return billets.Count;
-    }
+
 
     /// <summary>
     /// pour avoir le gain des billets
     /// </summary>
     /// <returns>le gain de tout les billets</returns>
-    public int GainTotaux()
-    {
-        return billets.Count * AbstractBillet.PRIX_BILLETS;
-    }
+
 }

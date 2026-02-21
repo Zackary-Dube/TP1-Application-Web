@@ -7,12 +7,13 @@
     <list default="true" id="20a4f033-33d5-4fef-a55d-33b6e8b802a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TP1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/Billeterie/AbstractBillet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/Billeterie/AbstractBillet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/Billeterie/Loterie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/Billeterie/Loterie.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/ChainOfResponsibility/AcheterBilletHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/ChainOfResponsibility/AcheterBilletHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP1/ChainOfResponsibility/IHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/ChainOfResponsibility/IHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/ChainOfResponsibility/LancerTirageHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/ChainOfResponsibility/LancerTirageHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/ChainOfResponsibility/VoirGainsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/ChainOfResponsibility/VoirGainsHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP1/TypeBillets/AbstractBilletSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/TypeBillets/BilletSequence.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/TypeBillets/BilletCombinaison.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/TypeBillets/BilletCombinaison.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/TypeBillets/BilletSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/TypeBillets/BilletSequence.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.pdb" afterDir="false" />
@@ -25,11 +26,9 @@
       <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/ref/TP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/ref/TP1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/refint/TP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/refint/TP1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestTP1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,9 +64,15 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "ilias",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="NOMBRE_NUMERO_BILLET" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="TP1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -102,6 +107,8 @@
       <workItem from="1770658657189" duration="382000" />
       <workItem from="1771093465749" duration="9713000" />
       <workItem from="1771169396714" duration="10110000" />
+      <workItem from="1771643085555" duration="1587000" />
+      <workItem from="1771695667307" duration="13444000" />
     </task>
     <servers />
   </component>
@@ -127,6 +134,19 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TP1/Program.cs</url>
+          <line>56</line>
+          <properties documentPath="C:\Users\zacka\OneDrive\Bureau\SESSION-6\Application web I\TPs\TP1-Application-Web\TP1\TP1\Program.cs" containingFunctionPresentation="Method 'Main'">
+            <startOffsets>
+              <option value="1054" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1086" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

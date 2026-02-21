@@ -76,4 +76,11 @@ public class BilletCombinaison : AbstractBillet
             _ => 0
         };
     }
+
+//  Important pour mes tests (Zackary)
+    public override double CalculerGainSiGagnant(AbstractBillet billetTire)
+    {
+        return 0;
+    }
+
 }

@@ -5,25 +5,28 @@ namespace TP1;
 
 public class BilletSequence : AbstractBillet
 {
-    public List<int> ListeNumero { get; set; }
+    public int[] TABLEAU_PRIX = {0, 0, 0, 30, 40, 50, 60};
     public BilletSequence()
     {
-        ListeNumero = new List<int>();
+        TrouveNumeroBilletAutomatique();
     }
     
-    /// <summary>
-    /// Genere un numero du ticket automatiquement
-    /// </summary>
-    /// <param name="valeurMaximumSimpleNumero">valeur maximum qu'un numero du numero peut avoir</param>
-    /// <returns>liste de numero du billet</returns>
-    public void TrouveNumeroBilletAutomatique(int valeurMaximumSimpleNumero)
+    public BilletSequence(List<int> listeNumero)
+    {
+        ListeNumero = listeNumero;
+    }
+    
+    public void TrouveNumeroBilletAutomatique()
     {
         Random random = new Random();
         for (int i = 0; i < NOMBRE_NUMERO_BILLET; i++)
         {
-            ListeNumero.Add(random.Next(valeurMaximumSimpleNumero));
+            ListeNumero.Add(random.Next(NOMBRE_NUMERO_MAX));
         }
+
     }
+    
+    
 /*
  --- Liste des combinaisons gagnante possible ---
    1 2 3 4 5 6
@@ -37,13 +40,12 @@ public class BilletSequence : AbstractBillet
        3 4 5
          4 5 6
 */
-    
-    
-    void verifierSiGagnant(BilletSequence billetTire)
+    public override double CalculerGainSiGagnant(AbstractBillet billetTire)
     {
         List<string> listeCombinaisonGagnants = new List<string>();
+        string combinaisonBillet;
         List<int> listeNumeroBilletTire = billetTire.ListeNumero;
-
+        double gain = 0;
         int n = listeNumeroBilletTire.Count;
         
 //      Commencement position depart
@@ -58,23 +60,30 @@ public class BilletSequence : AbstractBillet
                 {
                     seq.Add(listeNumeroBilletTire[start + k]);
                 }
-
                 string t = string.Join(" ", seq);
-                Console.WriteLine(t);
                 listeCombinaisonGagnants.Add(t);
             }
         }
-        string listeNumeroBillet = string.Join("", ListeNumero);
-        foreach (string s in listeCombinaisonGagnants)
+        combinaisonBillet = string.Join(" ", ListeNumero);
+        foreach (string l in listeCombinaisonGagnants)
         {
-            
-            if (listeNumeroBillet.Contains(s))
+            if (combinaisonBillet.Contains(l))
             {
-                Console.WriteLine(s);
+                int nombreNumeroGagnant = 0;
+                foreach (char var in l)
+                {
+                    if (var == ' ')
+                    {
+                        nombreNumeroGagnant++;
+                    }
+                }
+                if (gain < TABLEAU_PRIX[nombreNumeroGagnant + 1])
+                {
+                    gain = TABLEAU_PRIX[nombreNumeroGagnant + 1];
+                }
             }
         }
-        
-        
+        return gain;
     }
     
     

@@ -17,12 +17,11 @@ public class AcheterBilletHandler : AbstractHandler
     {
         if ((TypeBillet) dictionnaire["billetType"] == TypeBillet.Sequence)
         {
-            List<AbstractBillet> listeBillet = (List<AbstractBillet>) dictionnaire["listeBillets"];
-            for (int i = 0; i < (int)dictionnaire["nombreBilletVendu"]; i++)
+            for (int i = 0; i < ((int) dictionnaire["nombreBilletVendu"]); i++)
             {
-                listeBillet.Add(creationUnBilletSequence((int)dictionnaire["ValeurMaximumSimpleNumero"]));
+                AbstractBillet billet = new BilletSequence();
+                ((Loterie) dictionnaire["loterie"]).AjouterBilletListe(billet);
             }
-            dictionnaire["listeBillets"] = listeBillet;
         } else if ((TypeBillet) dictionnaire["typeBillet"] == TypeBillet.Combinaison)
         {
             
@@ -32,22 +31,4 @@ public class AcheterBilletHandler : AbstractHandler
         }
         base.Handle(dictionnaire);
     }
-
-    /// <summary>
-    /// Creation d'un billet sequence et mise a jour de la liste de billet
-    /// </summary>
-    /// <param name="dictionnaire">passe le dictionnaire avec toutes les donnees</param>
-    public AbstractBillet creationUnBilletSequence(int valeurMaximum)
-    {
-        BilletSequence billet = new BilletSequence();
-        billet.TrouveNumeroBilletAutomatique(valeurMaximum);
-        return billet;
-    }
-    public void creationBilletCombinaison()
-    {
-        
-        
-        
-    }
-    
 }
