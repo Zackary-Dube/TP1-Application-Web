@@ -1,7 +1,7 @@
 ﻿namespace TP1.Options;
 
 /// <summary>
-/// Action possible par rapport a la loterie
+/// On ne l’utilisera pas pour ce TP
 /// </summary>
 public enum ActionSysteme
 {

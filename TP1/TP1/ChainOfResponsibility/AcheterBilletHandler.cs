@@ -1,27 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
-
-namespace TP1.ChainOfResponsibility;
-
 using TP1.Billeterie;
 using TP1.Options;
 
+namespace TP1.ChainOfResponsibility;
+
+/// <summary>
+/// Handler responsable de l’achat des billets
+/// Crée les billets selon le type sélectionné
+/// Les ajoute à la loterie et affiche les numéros générés
+/// </summary>
 public class AcheterBilletHandler : AbstractHandler
 {
-    public AcheterBilletHandler()
-    {
-        
-    }
-    
+    /// <summary>
+    /// Traite l’action d’achat d’un billet
+    /// Selon le type de billet (combinaison ou séquence), il crée le nombre de billets demandés, les ajoute à la loterie
+    /// Transmet ensuite l’exécution au prochain handler
+    /// </summary>
+    /// <param name="dictionnaire">Dictionnaire contenant les informations necessaire a l'achat des billets</param>
     public override void Handle(Dictionary<string, object> dictionnaire)
     {
         if ((TypeBillet) dictionnaire["billetType"] == TypeBillet.Sequence)
         {
+            Console.WriteLine("---- Liste des billets achetés ----");
             for (int i = 0; i < ((int) dictionnaire["nombreBilletVendu"]); i++)
-            {
-                AbstractBillet billet = new BilletSequence();
-                ((Loterie) dictionnaire["loterie"]).AjouterBilletListe(billet);
-            }
+                CreationBilletSequence((Loterie)dictionnaire["loterie"]);
         } else if ((TypeBillet) dictionnaire["typeBillet"] == TypeBillet.Combinaison)
         {
             
@@ -30,5 +33,16 @@ public class AcheterBilletHandler : AbstractHandler
             
         }
         base.Handle(dictionnaire);
+    }
+
+    /// <summary>
+    /// Crée un billet de type séquence, l’ajoute à la loterie et affiche les numéros du billet créé
+    /// </summary>
+    /// <param name="loterie">Instance de la loterie à laquelle le billet doit être ajouté</param>
+    public void CreationBilletSequence(Loterie loterie)
+    {
+        AbstractBillet billet = new BilletSequence();
+        loterie.AjouterBilletListe(billet);
+        Console.WriteLine(string.Join(" ", billet.ListeNumero));
     }
 }
