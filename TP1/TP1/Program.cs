@@ -26,6 +26,7 @@ o Le type de billets tirés
         Dictionary<string, object> dictionaire = new Dictionary<string, object>();
         
         dictionaire.Add("billetType", TypeBillet.Sequence);
+        dictionaire.Add("BilletType", TypeBillet.Combinaison);
         dictionaire.Add("loterie", loterie);
         dictionaire.Add("nombreBilletVendu", 10000000);
         

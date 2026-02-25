@@ -37,7 +37,7 @@ public class Loterie
     public void AjouterBilletListe(AbstractBillet billet)
     {
         _listeBillets.Add(billet);
-        Revenu += AbstractBillet.PRIX_BILLETS;
+        Revenu += BilletTire.PRIX_BILLETS;
     } 
     
     /// <summary>
@@ -46,6 +46,15 @@ public class Loterie
     public void LancerTirage()
     {
         AbstractBillet billetTire = new BilletSequence();
+        BilletTire =  billetTire;
+    }
+    
+    /// <summary>
+    /// Lance le tirage de la loterie en générant un billet tiré
+    /// </summary>
+    public void LancerTirageCombinaison()
+    {
+        AbstractBillet billetTire = new BilletCombinaison();
         BilletTire =  billetTire;
     }
 

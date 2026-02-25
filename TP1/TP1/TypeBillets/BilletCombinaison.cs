@@ -6,21 +6,39 @@ namespace TP1;
 
 /// <summary>
 /// Représente un billet de type combinaison
+/// Ce billet est gagnant si un ou plusieurs chiffres correspondent au billet tiré
 /// </summary>
 public class BilletCombinaison : AbstractBillet
 {
+    /// <summary>
+    /// Liste des numéros du billet
+    /// </summary>
     private List<int> _numeros = new List<int>();
     
+    /// <summary>
+    /// Prix du billet
+    /// </summary>
+    public override int PRIX_BILLETS => 5;
+    
+    /// <summary>
+    /// Variable aléatoire pour générer les numéros du billet
+    /// </summary>
     private static Random random = new Random();
-    private static int numeroMax = 50;
     
     public List<int> Numeros { get => _numeros; set => _numeros = value; }
 
+    /// <summary>
+    /// Initialise un nouveau billet combinaison avec des numéros aléatoires.
+    /// </summary>
     public BilletCombinaison()
     {
-        
+        GenererNumeros();
     }
 
+    /// <summary>
+    /// Initialise un nouveau billet combinaison avec des numéros prédéfinis.
+    /// </summary>
+    /// <param name="numeros">Représente la liste de numéros du billet</param>
     public BilletCombinaison(List<int> numeros)
     {
         Numeros = numeros;
@@ -33,7 +51,7 @@ public class BilletCombinaison : AbstractBillet
     {
         while (Numeros.Count < 6)
         {
-            int numero = random.Next(1, numeroMax);
+            int numero = random.Next(1, NOMBRE_NUMERO_MAX);
             if (!Numeros.Contains(numero))
             {
                 Numeros.Add(numero);
@@ -59,15 +77,36 @@ public class BilletCombinaison : AbstractBillet
         }
         return compteur;
     }
-
-    /// <summary>
-    /// Calcule les gains du client
-    /// </summary>
-    /// <param name="tirage">Billet du tirage</param>
-    /// <param name="client">Billet du client</param>
-    public void CalculerGain(BilletCombinaison tirage, BilletCombinaison client)
+    
+    public override int CalculerNombreNumerosGagnants(AbstractBillet billetTire)
     {
-        Gain = ComparerBillets(tirage, client) switch
+        if (billetTire is not BilletCombinaison tirage)
+            return 0;
+
+        int compteur = 0;
+
+        foreach (int numero in ListeNumero)
+        {
+            if (tirage.ListeNumero.Contains(numero))
+                compteur++;
+        }
+
+        return compteur;
+    }
+    
+    /// <summary>
+    /// Compare le billet du client avec le billet tiré par la loterie et détermine le montant gagné.
+    /// </summary>
+    /// <param name="billetTire">Correspond au billet tiré</param>
+    /// <returns></returns>
+    public override double CalculerGainSiGagnant(AbstractBillet billetTire)
+    {
+        if (billetTire is not BilletCombinaison tirage)
+            return 0;
+
+        int nb = CalculerNombreNumerosGagnants(billetTire);
+
+        return nb switch
         {
             3 => 5,
             4 => 20,
@@ -75,12 +114,6 @@ public class BilletCombinaison : AbstractBillet
             6 => 1000,
             _ => 0
         };
-    }
-
-//  Important pour mes tests (Zackary)
-    public override double CalculerGainSiGagnant(AbstractBillet billetTire)
-    {
-        return 0;
     }
 
 }

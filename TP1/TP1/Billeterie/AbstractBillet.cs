@@ -9,7 +9,7 @@ public abstract class AbstractBillet
     /// <summary>
     /// Prix du billet
     /// </summary>
-    public const int PRIX_BILLETS = 2;
+    public abstract int PRIX_BILLETS { get; }
     
     /// <summary>
     /// Nombre de numéros qu’un billet doit contenir
@@ -56,4 +56,9 @@ public abstract class AbstractBillet
     /// <param name="billetTire">Billet tiré lors du tirage de la loterie</param>
     /// <returns>Montant du gain obtenu par le billet (retourne 0 si le billet n’est pas gagnant)</returns>
     public abstract double CalculerGainSiGagnant(AbstractBillet billetTire);
+    
+    public virtual int CalculerNombreNumerosGagnants(AbstractBillet billetTire)
+    {
+        return 0;
+    }
 }

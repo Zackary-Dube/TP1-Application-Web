@@ -9,6 +9,7 @@ namespace TP1;
 /// </summary>
 public class BilletSequence : AbstractBillet
 {
+    public override int PRIX_BILLETS => 2;
     /// <summary>
     /// Tableau des prix associés au nombre de numéros gagnants consécutifs
     /// L’index représente le nombre de numéros gagnants et donc le prix associé

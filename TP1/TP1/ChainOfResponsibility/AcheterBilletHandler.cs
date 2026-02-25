@@ -27,10 +27,9 @@ public class AcheterBilletHandler : AbstractHandler
                 CreationBilletSequence((Loterie)dictionnaire["loterie"]);
         } else if ((TypeBillet) dictionnaire["typeBillet"] == TypeBillet.Combinaison)
         {
-            
-            
-            
-            
+            Console.WriteLine("---- Liste des billets achetés ----");
+            for (int i = 0; i < ((int) dictionnaire["nombreBilletVendu"]); i++)
+                CreationBilletCombinaison((Loterie)dictionnaire["loterie"]);
         }
         base.Handle(dictionnaire);
     }
@@ -42,6 +41,17 @@ public class AcheterBilletHandler : AbstractHandler
     public void CreationBilletSequence(Loterie loterie)
     {
         AbstractBillet billet = new BilletSequence();
+        loterie.AjouterBilletListe(billet);
+        Console.WriteLine(string.Join(" ", billet.ListeNumero));
+    }
+    
+    /// <summary>
+    /// Crée un billet de type combinaison, l’ajoute à la loterie et affiche les numéros du billet créé
+    /// </summary>
+    /// <param name="loterie">Instance de la loterie à laquelle le billet doit être ajouté</param>
+    public void CreationBilletCombinaison(Loterie loterie)
+    {
+        AbstractBillet billet = new BilletCombinaison();
         loterie.AjouterBilletListe(billet);
         Console.WriteLine(string.Join(" ", billet.ListeNumero));
     }
