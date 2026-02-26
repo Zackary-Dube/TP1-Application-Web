@@ -4,6 +4,9 @@ using NUnit.Framework;
 
 namespace TestTP1;
 
+/// <summary>
+/// Classe de tests pour les méthodes de BilletCombinaison.
+/// </summary>
 [TestFixture]
 [TestOf(typeof(BilletCombinaison))]
 public class BilletCombinaisonTest

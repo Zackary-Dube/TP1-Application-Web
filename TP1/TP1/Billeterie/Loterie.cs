@@ -37,7 +37,7 @@ public class Loterie
     public void AjouterBilletListe(AbstractBillet billet)
     {
         _listeBillets.Add(billet);
-        Revenu += BilletTire.PRIX_BILLETS;
+        Revenu += billet.PRIX_BILLETS;
     } 
     
     /// <summary>

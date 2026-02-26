@@ -42,6 +42,7 @@ public class BilletCombinaison : AbstractBillet
     public BilletCombinaison(List<int> numeros)
     {
         Numeros = numeros;
+        ListeNumero = numeros;
     }
 
     /// <summary>
