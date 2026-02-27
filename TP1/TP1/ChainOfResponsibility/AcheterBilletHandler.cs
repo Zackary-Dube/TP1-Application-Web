@@ -25,13 +25,26 @@ public class AcheterBilletHandler : AbstractHandler
             Console.WriteLine("---- Liste des billets achetés ----");
             for (int i = 0; i < ((int) dictionnaire["nombreBilletVendu"]); i++)
                 CreationBilletSequence((Loterie)dictionnaire["loterie"]);
-        } else if ((TypeBillet) dictionnaire["typeBillet"] == TypeBillet.Combinaison)
+        } else if ((TypeBillet) dictionnaire["billetType"] == TypeBillet.Combinaison)
         {
             Console.WriteLine("---- Liste des billets achetés ----");
             for (int i = 0; i < ((int) dictionnaire["nombreBilletVendu"]); i++)
                 CreationBilletCombinaison((Loterie)dictionnaire["loterie"]);
         }
         base.Handle(dictionnaire);
+        
+        /*int nombre = (int)dictionnaire["nombreBilletVendu"];
+        Loterie loterie = (Loterie)dictionnaire["loterie"];
+
+        Console.WriteLine("---- Liste des billets achetés ----");
+
+        for (int i = 0; i < nombre; i++)
+        {
+            CreationBilletSequence(loterie);
+            CreationBilletCombinaison(loterie);
+        }
+
+        base.Handle(dictionnaire);*/
     }
 
     /// <summary>

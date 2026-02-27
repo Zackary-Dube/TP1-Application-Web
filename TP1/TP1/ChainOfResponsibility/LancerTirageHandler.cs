@@ -32,5 +32,15 @@ public class LancerTirageHandler : AbstractHandler
             
         }
         base.Handle(dictionnaire);
+        
+        /*Loterie loterie = (Loterie)dictionnaire["loterie"];
+
+        Console.WriteLine("---- Billet gagnant ----");
+        
+        loterie.LancerTirage();
+        
+        Console.WriteLine(string.Join(" ", loterie.BilletTire.ListeNumero));
+
+        base.Handle(dictionnaire);*/
     }
 }

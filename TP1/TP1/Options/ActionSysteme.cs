@@ -7,5 +7,6 @@ public enum ActionSysteme
 {
     AcheterBillet,
     LancerTirage,
-    VoirGain
+    VoirGain,
+    AfficherStatistiques
 }

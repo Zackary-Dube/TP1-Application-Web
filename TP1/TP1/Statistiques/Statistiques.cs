@@ -14,7 +14,10 @@ public class Statistiques
     /// <summary>
     /// Représente le billet tiré par la loterie.
     /// </summary>
-    private readonly AbstractBillet _billetTire;
+    private AbstractBillet _billetTire;
+
+    public AbstractBillet BilletTire { get => _billetTire; set => _billetTire = value; }
+
 
     // Montants globaux
     public double MontantTotalDepense { get; private set; }
@@ -42,6 +45,11 @@ public class Statistiques
     /// </summary>
     public void CalculerStatistiques()
     {
+        MontantTotalDepense = 0;
+        MontantTotalGagne = 0;
+        _montantParNombreGagnant.Clear();
+        _depenseParType.Clear();
+        
         foreach (AbstractBillet billet in _billetsVendus)
         {
             MontantTotalDepense += billet.PRIX_BILLETS;
