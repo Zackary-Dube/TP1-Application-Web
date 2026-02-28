@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿/* Zackary Dubé */
 using TP1.Billeterie;
 using TP1.Options;
 
@@ -22,7 +21,7 @@ public class LancerTirageHandler : AbstractHandler
         if ((TypeBillet)dictionnaire["billetType"] == TypeBillet.Sequence)
         {
             Console.WriteLine("---- Billet gagnant ----");
-            ((Loterie) dictionnaire["loterie"]).LancerTirage();
+            ((Loterie) dictionnaire["loterie"]).LancerTirageSequence();
             Console.WriteLine(string.Join(" ", (((Loterie) dictionnaire["loterie"]).BilletTire).ListeNumero));
         } else if ((TypeBillet) dictionnaire["typeBillet"] == TypeBillet.Combinaison)
         {

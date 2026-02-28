@@ -321,3 +321,10 @@ C:\Users\zacka\OneDrive\Bureau\SESSION-6\TP1-Application-Web\TP1\TestTP1\obj\Deb
 C:\Users\zacka\OneDrive\Bureau\SESSION-6\TP1-Application-Web\TP1\TestTP1\obj\Debug\net10.0\TestTP1.pdb
 C:\Users\zacka\OneDrive\Bureau\SESSION-6\TP1-Application-Web\TP1\TestTP1\obj\Debug\net10.0\TestTP1.genruntimeconfig.cache
 C:\Users\zacka\OneDrive\Bureau\SESSION-6\TP1-Application-Web\TP1\TestTP1\obj\Debug\net10.0\ref\TestTP1.dll
+C:\Users\zacka\Desktop\SESSION-6\Application web I\TPs\TP1-Application-Web\TP1\TestTP1\bin\Debug\net10.0\.msCoverageSourceRootsMapping_TestTP1
+C:\Users\zacka\Desktop\SESSION-6\Application web I\TPs\TP1-Application-Web\TP1\TestTP1\bin\Debug\net10.0\CoverletSourceRootsMapping_TestTP1
+C:\Users\zacka\Desktop\SESSION-6\Application web I\TPs\TP1-Application-Web\TP1\TestTP1\bin\Debug\net10.0\TP1.deps.json
+C:\Users\zacka\Desktop\SESSION-6\Application web I\TPs\TP1-Application-Web\TP1\TestTP1\bin\Debug\net10.0\TP1.runtimeconfig.json
+C:\Users\zacka\Desktop\SESSION-6\Application web I\TPs\TP1-Application-Web\TP1\TestTP1\bin\Debug\net10.0\TP1.exe
+C:\Users\zacka\Desktop\SESSION-6\Application web I\TPs\TP1-Application-Web\TP1\TestTP1\bin\Debug\net10.0\TP1.dll
+C:\Users\zacka\Desktop\SESSION-6\Application web I\TPs\TP1-Application-Web\TP1\TestTP1\bin\Debug\net10.0\TP1.pdb

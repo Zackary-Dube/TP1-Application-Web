@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zacka\\OneDrive\\Bureau\\SESSION-6\\TP1-Application-Web\\TP1\\TP1\\TP1.csproj": {}
+    "C:\\Users\\zacka\\Desktop\\SESSION-6\\Application web I\\TPs\\TP1-Application-Web\\TP1\\TP1\\TP1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zacka\\OneDrive\\Bureau\\SESSION-6\\TP1-Application-Web\\TP1\\TP1\\TP1.csproj": {
+    "C:\\Users\\zacka\\Desktop\\SESSION-6\\Application web I\\TPs\\TP1-Application-Web\\TP1\\TP1\\TP1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zacka\\OneDrive\\Bureau\\SESSION-6\\TP1-Application-Web\\TP1\\TP1\\TP1.csproj",
+        "projectUniqueName": "C:\\Users\\zacka\\Desktop\\SESSION-6\\Application web I\\TPs\\TP1-Application-Web\\TP1\\TP1\\TP1.csproj",
         "projectName": "TP1",
-        "projectPath": "C:\\Users\\zacka\\OneDrive\\Bureau\\SESSION-6\\TP1-Application-Web\\TP1\\TP1\\TP1.csproj",
+        "projectPath": "C:\\Users\\zacka\\Desktop\\SESSION-6\\Application web I\\TPs\\TP1-Application-Web\\TP1\\TP1\\TP1.csproj",
         "packagesPath": "C:\\Users\\zacka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zacka\\OneDrive\\Bureau\\SESSION-6\\TP1-Application-Web\\TP1\\TP1\\obj\\",
+        "outputPath": "C:\\Users\\zacka\\Desktop\\SESSION-6\\Application web I\\TPs\\TP1-Application-Web\\TP1\\TP1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\zacka\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+          "C:\\Users\\zacka\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"

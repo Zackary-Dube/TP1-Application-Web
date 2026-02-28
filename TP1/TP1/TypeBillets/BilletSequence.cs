@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics;
+﻿/* Zackary Dubé */
 using TP1.Billeterie;
 
 namespace TP1;

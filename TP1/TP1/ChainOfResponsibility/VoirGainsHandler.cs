@@ -1,4 +1,5 @@
-﻿using TP1.Billeterie;
+﻿/* Zackary Dubé */
+using TP1.Billeterie;
 using TP1.Options;
 
 namespace TP1.ChainOfResponsibility;
@@ -9,8 +10,6 @@ namespace TP1.ChainOfResponsibility;
 /// </summary>
 public class VoirGainsHandler : AbstractHandler
 {
-    
-    
 /// <summary>
 /// Calcule les gains de la loterie en fonction du billet tiré (combinaison | séquence)
 /// Transmet l’exécution au prochain handler

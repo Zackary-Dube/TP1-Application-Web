@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿/* Zackary Dubé */
 using TP1.Billeterie;
 using TP1.Options;
 

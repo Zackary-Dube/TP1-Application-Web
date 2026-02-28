@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using TP1.Billeterie;
+﻿using TP1.Billeterie;
 using TP1.ChainOfResponsibility;
 using TP1.Options;
 
@@ -11,13 +8,14 @@ class Program
 {
     static void Main(string[] args)
     {
-
         ScenarioSequence();
-
-
         
     }
-
+    
+    /* Zackary Dubé */
+    /// <summary>
+    /// Représente un scénario complet avec un billet séquence et 10000 billets vendus
+    /// </summary>
     static void ScenarioSequence()
     {
         Loterie loterie = new Loterie();
@@ -84,7 +82,7 @@ class Program
         // Billet de référence.
         AbstractBillet billetUtilisateur = new BilletCombinaison();
         billetUtilisateur.ListeNumero = numerosUtilisateur.ToList();
-        loterie.LancerTirage();
+        loterie.LancerTirageCombinaison();
         
         TP1.Statistiques.Statistiques stats = new TP1.Statistiques.Statistiques(new List<AbstractBillet> { billetUtilisateur }, loterie.BilletTire);
         dictionaire.Add("statistiques", stats);

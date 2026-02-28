@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿/* Zackary Dubé */
 namespace TP1.ChainOfResponsibility;
 
 /// <summary>

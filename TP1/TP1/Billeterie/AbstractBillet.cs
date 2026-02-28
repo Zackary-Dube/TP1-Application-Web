@@ -1,4 +1,5 @@
-﻿namespace TP1.Billeterie;
+﻿/* Zackary Dubé */
+namespace TP1.Billeterie;
 
 /// <summary>
 /// Represente un billet de loterie abstrait.

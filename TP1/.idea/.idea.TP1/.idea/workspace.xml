@@ -7,6 +7,13 @@
     <list default="true" id="20a4f033-33d5-4fef-a55d-33b6e8b802a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TP1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/TP1.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/Billeterie/AbstractBillet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/Billeterie/AbstractBillet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/Billeterie/Loterie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/Billeterie/Loterie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/ChainOfResponsibility/AbstractHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/ChainOfResponsibility/AbstractHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/ChainOfResponsibility/AcheterBilletHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/ChainOfResponsibility/AcheterBilletHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/ChainOfResponsibility/IHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/ChainOfResponsibility/IHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/ChainOfResponsibility/LancerTirageHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/ChainOfResponsibility/LancerTirageHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/ChainOfResponsibility/VoirGainsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/ChainOfResponsibility/VoirGainsHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/TypeBillets/BilletSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/TypeBillets/BilletSequence.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.dll" afterDir="false" />
@@ -16,8 +23,6 @@
       <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/TP1.pdb" afterDir="false" />
@@ -26,14 +31,20 @@
       <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/ref/TP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/ref/TP1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/refint/TP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/Debug/net10.0/refint/TP1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/TP1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/TP1.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1/obj/TP1.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/TP1.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/Billeterie/AbstractBilletTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/Billeterie/AbstractBilletTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/ClassesTest/BilletTestable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/ClassesTest/BilletTestable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/TypeBillets/BilletSequenceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/TypeBillets/BilletSequenceTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/.msCoverageSourceRootsMapping_TestTP1" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/.msCoverageSourceRootsMapping_TestTP1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/CoverletSourceRootsMapping_TestTP1" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/CoverletSourceRootsMapping_TestTP1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TestTP1.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TestTP1.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TP1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TP1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TP1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TP1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TP1.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TestTP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TestTP1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TestTP1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/bin/Debug/net10.0/TestTP1.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/TestTP1.AssemblyInfo.cs" afterDir="false" />
@@ -50,6 +61,7 @@
       <change beforePath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/ref/TestTP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/ref/TestTP1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/refint/TestTP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/Debug/net10.0/refint/TestTP1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/obj/TestTP1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/TestTP1.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTP1/obj/TestTP1.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/TestTP1.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestTP1/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestTP1/obj/project.packagespec.json" afterDir="false" />
@@ -68,10 +80,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/228bff957d5b9f32cfbedd8bf82a5d3e862ec3e051593a67913b95ae288287/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TP1/Options/TypeBillet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TP1/TypeBillets/BilletSequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestTP1/Billeterie/AbstractBilletTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestTP1/Billeterie/LoterieTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestTP1/ChainOfResponsibility/AcheterBilletHandlerTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestTP1/ChainOfResponsibility/LancerTirageHandlerTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestTP1/ChainOfResponsibility/VoirGainsHandlerTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestTP1/ClassesTest/BilletTestable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestTP1/TypeBillets/BilletSequenceTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestTP1/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
@@ -102,11 +117,11 @@
       <command value="NOMBRE_NUMERO_BILLET" />
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.TP1">
+  <component name="RunManager">
     <configuration name="TP1" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/TP1/bin/Debug/net10.0/TP1.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TP1/bin/Debug/net10.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
@@ -119,7 +134,7 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value="net10.0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -141,6 +156,8 @@
       <workItem from="1771773449073" duration="10710000" />
       <workItem from="1772237785774" duration="497000" />
       <workItem from="1772292914321" duration="8057000" />
+      <workItem from="1772307534507" duration="9592000" />
+      <workItem from="1772317612036" duration="300000" />
     </task>
     <servers />
   </component>

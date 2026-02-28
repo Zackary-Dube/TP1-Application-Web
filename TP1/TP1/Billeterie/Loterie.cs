@@ -1,4 +1,5 @@
-﻿using System;
+﻿/* Zackary Dubé */
+using System;
 using System.Net.NetworkInformation;
 using System.Collections.Generic;
 using TP1.Options;
@@ -43,10 +44,10 @@ public class Loterie
     /// <summary>
     /// Lance le tirage de la loterie en générant un billet tiré
     /// </summary>
-    public void LancerTirage()
+    public void LancerTirageSequence()
     {
         AbstractBillet billetTire = new BilletSequence();
-        BilletTire =  billetTire;
+        BilletTire = billetTire;
     }
     
     /// <summary>
@@ -55,7 +56,7 @@ public class Loterie
     public void LancerTirageCombinaison()
     {
         AbstractBillet billetTire = new BilletCombinaison();
-        BilletTire =  billetTire;
+        BilletTire = billetTire;
     }
 
     /// <summary>
@@ -63,6 +64,9 @@ public class Loterie
     /// </summary>
     public void CalculeGain()
     {
+        if (BilletTire == null)
+            throw new InvalidOperationException("Le tirage n'a pas été lancé.");
+        Gain = 0;
         foreach (AbstractBillet billet in _listeBillets)
         {
             Gain += billet.CalculerGainSiGagnant(BilletTire);
