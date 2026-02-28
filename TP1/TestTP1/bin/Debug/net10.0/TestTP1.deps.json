@@ -10,7 +10,8 @@
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "17.14.0",
           "NUnit": "4.3.2",
-          "NUnit3TestAdapter": "5.0.0"
+          "NUnit3TestAdapter": "5.0.0",
+          "TP1": "1.0.0"
         },
         "runtime": {
           "TestTP1.dll": {}
@@ -527,6 +528,14 @@
           "Microsoft.Testing.Extensions.VSTestBridge": "1.5.3",
           "Microsoft.Testing.Platform.MSBuild": "1.5.3"
         }
+      },
+      "TP1/1.0.0": {
+        "runtime": {
+          "TP1.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -626,6 +635,11 @@
       "sha512": "sha512-sy4cLoUAdE6TDM4wNX5gmNCyhMev5wUz4cA6ZRf/aON9vf9t4xTVGLj/4huhDKcS4dFfmVVcgcP70yC7WC9kKg==",
       "path": "nunit3testadapter/5.0.0",
       "hashPath": "nunit3testadapter.5.0.0.nupkg.sha512"
+    },
+    "TP1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

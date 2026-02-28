@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using TP1.Billeterie;
 
 namespace TP1;
@@ -9,14 +10,15 @@ namespace TP1;
 /// </summary>
 public class BilletSequence : AbstractBillet
 {
-    public override int PRIX_BILLETS => 2;
+    public override int PRIX_BILLETS => 10;
+    
     /// <summary>
     /// Tableau des prix associés au nombre de numéros gagnants consécutifs
     /// L’index représente le nombre de numéros gagnants et donc le prix associé
     /// (0) -> 0$; (1) -> 0$; (2) -> 0$; (3) -> 300$; (4) -> 1000$; (5) -> 20000$; (6) -> 1000000$;
     /// </summary>
     public int[] TABLEAU_PRIX = {0, 0, 0, 300, 1000, 20000, 1000000};
-    
+
     /// <summary>
     /// Initialise un nouveau billet de type séquence
     /// Génère automatiquement ses numéros
@@ -32,6 +34,16 @@ public class BilletSequence : AbstractBillet
     /// <param name="listeNumero">Liste des numéros du billet</param>
     public BilletSequence(List<int> listeNumero)
     {
+        if (listeNumero == null)
+            throw new ArgumentNullException(nameof(listeNumero));
+        
+        if (listeNumero.Count != NOMBRE_NUMERO_BILLET)
+            throw new ArgumentException($"Le billet doit contenir exactement {NOMBRE_NUMERO_BILLET} numéros.", nameof(listeNumero));
+        
+        for (int i = 0; i < listeNumero.Count; i++)
+            if (listeNumero[i] > NOMBRE_NUMERO_MAX || listeNumero[i] < 1)
+                throw new ArgumentOutOfRangeException(nameof(listeNumero), $"Le numéro à l’index {i} ({listeNumero[i]}) doit être entre 1 et {NOMBRE_NUMERO_MAX}.");            
+        
         ListeNumero = listeNumero;
     }
     
@@ -127,6 +139,8 @@ public class BilletSequence : AbstractBillet
     {
         return string.Join(" ", ListeNumero);
     }
+    
+    
 }
 
 /*
