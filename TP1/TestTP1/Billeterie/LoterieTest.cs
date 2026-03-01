@@ -76,6 +76,8 @@ public class LoterieTest
     [Test]
     public void LancerTirageCombinaison_CreeBilletCombinaison()
     {
+        var billet = new BilletCombinaison();
+        loterie.AjouterBilletListe(billet);
         loterie.LancerTirageCombinaison();
         Assert.That(loterie.BilletTire, Is.Not.Null);
         Assert.That(loterie.BilletTire, Is.InstanceOf<BilletCombinaison>());
