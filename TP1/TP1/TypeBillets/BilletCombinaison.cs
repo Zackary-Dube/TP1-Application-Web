@@ -26,6 +26,9 @@ public class BilletCombinaison : AbstractBillet
     /// </summary>
     private static Random random = new Random();
     
+    /// <summary>
+    /// Getter et Setter de la liste de numéros
+    /// </summary>
     public List<int> Numeros { get => _numeros; set => _numeros = value; }
 
     /// <summary>
@@ -102,7 +105,7 @@ public class BilletCombinaison : AbstractBillet
     }
     
     /// <summary>
-    /// Compare le billet du client avec le billet tiré par la loterie et détermine le montant gagné.
+    /// Détermine le montant gagné en fonction du nombre de numéro gagnant.
     /// </summary>
     /// <param name="billetTire">Correspond au billet tiré</param>
     /// <returns>Retourne le gain du billet en $</returns>

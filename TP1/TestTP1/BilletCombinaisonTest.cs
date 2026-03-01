@@ -9,7 +9,6 @@ namespace TestTP1;
 /// </summary>
 public class BilletCombinaisonTest
 {
-
     [Test]
     public void GenererNumerosDoitGenerer6NumerosUniqueEntre1Et50()
     {

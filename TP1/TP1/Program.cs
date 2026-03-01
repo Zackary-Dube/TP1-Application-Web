@@ -34,7 +34,7 @@ class Program
     
     /* Ilias Neil */
     /// <summary>
-    /// Représente un scénario complet qui simule une loterie avec 100 billets vendus et affiche les statistiques.
+    /// Représente un scénario complet qui simule une loterie avec des parametres choisis par l'utilisateur et affiche les statistiques.
     /// </summary>
     static void ScenarioCombinaison()
     {
@@ -72,7 +72,7 @@ class Program
                 numerosUtilisateur = null;
         }
 
-        // Définition des parametres du scénarios.
+        // Setup du scénarios.
         Loterie loterie = new Loterie();
         Dictionary<string, object> dictionaire = new Dictionary<string, object>();
         
@@ -80,24 +80,25 @@ class Program
         dictionaire.Add("billetType", TypeBillet.Combinaison);
         dictionaire.Add("loterie", loterie);
         dictionaire.Add("nombreBilletVendu", nbBilletVendu);
+        dictionaire.Add("numerosUtilisateur", numerosUtilisateur.ToList());
         
-        // Billet de référence.
-        AbstractBillet billetUtilisateur = new BilletCombinaison();
-        billetUtilisateur.ListeNumero = numerosUtilisateur.ToList();
+        // Billet tiré prédefini pour valider les statistiques.
         loterie.BilletTire = new BilletCombinaison(new List<int> { 1,2,3,4,5,9 });
-        loterie.AjouterBilletListe(billetUtilisateur);
         
         // Création des statistiques avec la liste des billets vendus.
         TP1.Statistiques.Statistiques stats = new Statistiques.Statistiques(loterie.ListeBillets, loterie.BilletTire);
         dictionaire.Add("statistiques", stats);
         
         // Créer la COR avec ses étapes.
-        IHandler chainHandler = new AcheterBilletHandler();
+        IHandler chainHandler = new CreationBilletReferenceHandler();
 
-        chainHandler.Next(new LancerTirageHandler())
+        chainHandler.Next(new AcheterBilletHandler())
+            .Next(new LancerTirageHandler())
             .Next(new AfficherStatistiquesHandler());
 
         chainHandler.Handle(dictionaire);
+        
+        AbstractBillet billetUtilisateur = (AbstractBillet)dictionaire["billetUtilisateur"];
         
         // Affiche le résultat de l'utilisateur.
         Console.WriteLine($"Billet utilisateur : {string.Join(",", billetUtilisateur.ListeNumero)}");

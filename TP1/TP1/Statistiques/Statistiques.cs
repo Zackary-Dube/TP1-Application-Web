@@ -1,4 +1,6 @@
-﻿namespace TP1.Statistiques;
+﻿/* Ilias Neil */
+
+namespace TP1.Statistiques;
 using TP1.Billeterie;
 
 /// <summary>
@@ -81,7 +83,7 @@ public class Statistiques
     /// </summary>
     public void AfficherStatistiques()
     {
-        Console.WriteLine("===== STATISTIQUES =====\n");
+        Console.WriteLine("===== STATISTIQUES =====");
 
         Console.WriteLine($"Montant total dépensé : {MontantTotalDepense}$");
         Console.WriteLine($"Montant total gagné : {MontantTotalGagne}$");
@@ -101,6 +103,6 @@ public class Statistiques
             Console.WriteLine($"{kvp.Key} : {kvp.Value}$");
         }
 
-        Console.WriteLine("\n=========================");
+        Console.WriteLine("=========================");
     }
 }

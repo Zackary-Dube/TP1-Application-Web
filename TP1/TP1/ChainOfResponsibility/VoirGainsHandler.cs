@@ -22,9 +22,7 @@ public class VoirGainsHandler : AbstractHandler
             ((Loterie) dictionnaire["loterie"]).CalculeGain();
         } else if ((TypeBillet) dictionnaire["typeBillet"] == TypeBillet.Combinaison)
         {
-            
-            
-            
+            ((Loterie) dictionnaire["loterie"]).CalculeGain();
         }
         base.Handle(dictionnaire);
     }
