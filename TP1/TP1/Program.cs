@@ -9,7 +9,7 @@ class Program
     static void Main(string[] args)
     {
         ScenarioSequence();
-        
+        ScenarioCombinaison();
     }
     
     /* Zackary Dubé */
@@ -84,9 +84,11 @@ class Program
         billetUtilisateur.ListeNumero = numerosUtilisateur.ToList();
         loterie.LancerTirageCombinaison();
         
+        // Créer les statistiques pour notre scénario.
         TP1.Statistiques.Statistiques stats = new TP1.Statistiques.Statistiques(new List<AbstractBillet> { billetUtilisateur }, loterie.BilletTire);
         dictionaire.Add("statistiques", stats);
         
+        // Créer la COR avec ses étapes.
         IHandler chainHandler = new AcheterBilletHandler();
 
         chainHandler.Next(new LancerTirageHandler())
@@ -94,6 +96,7 @@ class Program
 
         chainHandler.Handle(dictionaire);
         
+        // Affiche le résultat.
         Console.WriteLine($"Billet utilisateur : {string.Join(",", billetUtilisateur.ListeNumero)}");
         Console.WriteLine($"Gain utilisateur : {billetUtilisateur.CalculerGainSiGagnant(loterie.BilletTire)}$");
     }

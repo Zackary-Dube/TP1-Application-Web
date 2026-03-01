@@ -9,8 +9,6 @@ namespace TestTP1.Statistiques;
 /// <summary>
 /// Classe de tests pour les méthodes de Statistiques.
 /// </summary>
-[TestFixture]
-[TestOf(typeof(TP1.Statistiques.Statistiques))]
 public class StatistiquesTest
 {
 
