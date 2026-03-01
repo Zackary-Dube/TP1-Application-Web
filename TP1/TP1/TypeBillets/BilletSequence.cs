@@ -41,8 +41,7 @@ public class BilletSequence : AbstractBillet
         
         for (int i = 0; i < listeNumero.Count; i++)
             if (listeNumero[i] > NOMBRE_NUMERO_MAX || listeNumero[i] < 1)
-                throw new ArgumentOutOfRangeException(nameof(listeNumero), $"Le numéro à l’index {i} ({listeNumero[i]}) doit être entre 1 et {NOMBRE_NUMERO_MAX}.");            
-        
+                throw new ArgumentOutOfRangeException(nameof(listeNumero), $"Le numéro à l’index {i} ({listeNumero[i]}) doit être entre 1 et {NOMBRE_NUMERO_MAX}.");
         ListeNumero = listeNumero;
     }
     
@@ -67,31 +66,45 @@ public class BilletSequence : AbstractBillet
     {
         List<string> combinaisons = GenererCombinaisons(billetTire.ListeNumero);
         return CalculerGainMax(CombinaisonBillet(), combinaisons);
-        
     }
-
+    
     /// <summary>
-    /// Génère toutes les combinaisons possibles de séquences à partir de la liste de numéros fournie
+    /// Génère toutes les combinaisons possibles de séquences consécutives
+    /// à partir de la liste de numéros fournie.
+    /// Exemple :
+    /// Si numeros = { 5, 8, 12, 14, 21, 33 }
+    /// Pour chaque position i, on génère toutes les séquences qui commencent à cet index.
+    /// i = 0 - "5", "5-8", "5-8-12", "5-8-12-14", "5-8-12-14-21", "5-8-12-14-21-33"
+    /// i = 1 - "8", "8-12", "8-12-14", "8-12-14-21", "8-12-14-21-33"
+    /// i = 2 - "12", "12-14", "12-14-21", "12-14-21-33"
+    /// i = 3 - "14", "14-21", "14-21-33"
+    /// i = 4 - "21", "21-33"
+    /// i = 5 - "33"
+    /// Total généré : 21 séquences
     /// </summary>
-    /// <param name="numeros">Liste des numéros du billet tiré</param>
-    /// <returns>Liste des combinaisons de séquences sous forme de chaînes</returns>
+    /// <param name="numeros">
+    /// Liste des numéros du billet tiré (ex: { 5, 8, 12, 14, 21, 33 })
+    /// </param>
+    /// <returns>
+    /// Liste de toutes les séquences consécutives générées sous forme de chaînes
+    /// </returns>
     private List<string> GenererCombinaisons(List<int> numeros)
     {
         List<string> resultats = new List<string>();
         for (int i = 0; i < numeros.Count; i++)
         {
-            resultats.AddRange(GenererSequenceDepuis(numeros, i));
+            resultats.AddRange(GenererSequence(numeros, i));
         }
         return resultats;
     }
 
     /// <summary>
-    /// Génère les séquences possibles à partir d’une position donnée
+    /// Génère les séquences possibles à partir d’une position
     /// </summary>
     /// <param name="numeros">Liste des numéros du billet tiré</param>
     /// <param name="start">Position de départ de la séquence</param>
     /// <returns>Liste des séquences générées</returns>
-    private List<string> GenererSequenceDepuis(List<int> numeros, int start)
+    private List<string> GenererSequence(List<int> numeros, int start)
     {
         List<string> resultats = new List<string>();
         for (int len = numeros.Count - start; len >= 3; len--)
@@ -119,9 +132,9 @@ public class BilletSequence : AbstractBillet
     }
 
     /// <summary>
-    /// Détermine le gain associé à une combinaison spécifiqu
+    /// Détermine le gain associé à une combinaison spécifique
     /// </summary>
-    /// <param name="billet">Chaîne de caractères du billet courant</param>
+    /// <param name="billet">Chaine de caractères du billet courant</param>
     /// <param name="combinaison">Combinaison de numéros à vérifier</param>
     /// <returns>Montant du gain pour la combinaison (retourne 0 si la combinaison n’est pas gagnante)</returns>
     private double GainPourCombinaison(string billet, string combinaison)
@@ -138,11 +151,9 @@ public class BilletSequence : AbstractBillet
     {
         return string.Join(" ", ListeNumero);
     }
-    
-    
 }
 
-/*
+/* Exemple sur l'algorithme de depart a titre informatif
  --- Liste des combinaisons gagnante possible ---
    1 2 3 4 5 6
    1 2 3 4 5
@@ -199,6 +210,5 @@ public class BilletSequence : AbstractBillet
             }
         }
         return gain;
-    }
-
-    */
+    } 
+*/

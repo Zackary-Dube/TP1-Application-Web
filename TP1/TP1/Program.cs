@@ -8,8 +8,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        // ScenarioSequence();
-        ScenarioCombinaison();
+        //ScenarioSequence();
+        //ScenarioCombinaison();
     }
     
     /* Zackary Dubé */
