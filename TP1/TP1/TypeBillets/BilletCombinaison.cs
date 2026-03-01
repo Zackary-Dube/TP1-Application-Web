@@ -32,6 +32,7 @@ public class BilletCombinaison : AbstractBillet
     /// </summary>
     public BilletCombinaison()
     {
+        ListeNumero = new List<int>();
         GenererNumeros();
     }
 
@@ -41,7 +42,6 @@ public class BilletCombinaison : AbstractBillet
     /// <param name="numeros">Représente la liste de numéros du billet</param>
     public BilletCombinaison(List<int> numeros)
     {
-        Numeros = numeros;
         ListeNumero = numeros;
     }
 
@@ -50,12 +50,12 @@ public class BilletCombinaison : AbstractBillet
     /// </summary>
     public void GenererNumeros()
     {
-        while (Numeros.Count < 6)
+        while (ListeNumero.Count < 6)
         {
             int numero = random.Next(1, NOMBRE_NUMERO_MAX);
-            if (!Numeros.Contains(numero))
+            if (!ListeNumero.Contains(numero))
             {
-                Numeros.Add(numero);
+                ListeNumero.Add(numero);
             }
         }
     }
@@ -69,9 +69,9 @@ public class BilletCombinaison : AbstractBillet
     public int ComparerBillets(BilletCombinaison tirage, BilletCombinaison client)
     {
         int compteur = 0;
-        foreach (int numero in client.Numeros)
+        foreach (int numero in client.ListeNumero)
         {
-            if (tirage.Numeros.Contains(numero))
+            if (tirage.ListeNumero.Contains(numero))
             {
                 compteur++;
             }
@@ -79,16 +79,21 @@ public class BilletCombinaison : AbstractBillet
         return compteur;
     }
     
+    /// <summary>
+    /// Calcule le nombre de numéros gagnants par billet.
+    /// </summary>
+    /// <param name="billetTire"></param>
+    /// <returns>Retourne le nombre de numéros gagnants</returns>
     public override int CalculerNombreNumerosGagnants(AbstractBillet billetTire)
     {
-        if (billetTire is not BilletCombinaison tirage)
+        if (billetTire is not BilletCombinaison)
             return 0;
 
         int compteur = 0;
 
         foreach (int numero in ListeNumero)
         {
-            if (tirage.ListeNumero.Contains(numero))
+            if (billetTire.ListeNumero.Contains(numero))
                 compteur++;
         }
 
@@ -99,10 +104,10 @@ public class BilletCombinaison : AbstractBillet
     /// Compare le billet du client avec le billet tiré par la loterie et détermine le montant gagné.
     /// </summary>
     /// <param name="billetTire">Correspond au billet tiré</param>
-    /// <returns></returns>
+    /// <returns>Retourne le gain du billet en $</returns>
     public override double CalculerGainSiGagnant(AbstractBillet billetTire)
     {
-        if (billetTire is not BilletCombinaison tirage)
+        if (billetTire is not BilletCombinaison)
             return 0;
 
         int nb = CalculerNombreNumerosGagnants(billetTire);

@@ -23,23 +23,12 @@ public class LancerTirageHandler : AbstractHandler
             Console.WriteLine("---- Billet gagnant ----");
             ((Loterie) dictionnaire["loterie"]).LancerTirageSequence();
             Console.WriteLine(string.Join(" ", (((Loterie) dictionnaire["loterie"]).BilletTire).ListeNumero));
-        } else if ((TypeBillet) dictionnaire["typeBillet"] == TypeBillet.Combinaison)
+        } else if ((TypeBillet) dictionnaire["billetType"] == TypeBillet.Combinaison)
         {
-            
-            
-            
-            
+            Console.WriteLine("---- Billet gagnant ----");
+            ((Loterie) dictionnaire["loterie"]).LancerTirageCombinaison();
+            Console.WriteLine(string.Join(" ", (((Loterie) dictionnaire["loterie"]).BilletTire).ListeNumero));
         }
         base.Handle(dictionnaire);
-        
-        /*Loterie loterie = (Loterie)dictionnaire["loterie"];
-
-        Console.WriteLine("---- Billet gagnant ----");
-        
-        loterie.LancerTirage();
-        
-        Console.WriteLine(string.Join(" ", loterie.BilletTire.ListeNumero));
-
-        base.Handle(dictionnaire);*/
     }
 }

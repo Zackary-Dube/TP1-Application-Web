@@ -8,7 +8,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        ScenarioSequence();
+        // ScenarioSequence();
         ScenarioCombinaison();
     }
     
@@ -32,17 +32,18 @@ class Program
         Console.WriteLine("Profit : " + ((((Loterie) dictionaire["loterie"]).Revenu) - (((Loterie) dictionaire["loterie"]).Gain)));
     }
     
+    /* Ilias Neil */
     /// <summary>
-    /// Représente un scénario complet qui simule une loterie avec 100 billets vendus
+    /// Représente un scénario complet qui simule une loterie avec 100 billets vendus et affiche les statistiques.
     /// </summary>
     static void ScenarioCombinaison()
     {
         Console.WriteLine("Scénario billet combinaison.");
         
         // Parametres intéractifs.
-        String nbBilletVendu = "0";
+        int nbBilletVendu = 0;
         Console.Write("Entrez le nombre de billets vendus : ");
-        nbBilletVendu = Console.ReadLine();
+        nbBilletVendu = int.Parse(Console.ReadLine());
         
         Console.WriteLine("Entrez les numéros de votre billet de référence (6 numéros séparés par des espaces) : ");
         int[] numerosUtilisateur = null;
@@ -75,17 +76,18 @@ class Program
         Loterie loterie = new Loterie();
         Dictionary<string, object> dictionaire = new Dictionary<string, object>();
         
-        // Ajout de la loterie avec 100 billets vendus.
+        // Ajout de la loterie avec un nombre de billets vendus choisi.
+        dictionaire.Add("billetType", TypeBillet.Combinaison);
         dictionaire.Add("loterie", loterie);
         dictionaire.Add("nombreBilletVendu", nbBilletVendu);
         
         // Billet de référence.
         AbstractBillet billetUtilisateur = new BilletCombinaison();
         billetUtilisateur.ListeNumero = numerosUtilisateur.ToList();
-        loterie.LancerTirageCombinaison();
+        loterie.BilletTire = new BilletCombinaison(new List<int> { 1,2,3,4,5,9 });
         
-        // Créer les statistiques pour notre scénario.
-        TP1.Statistiques.Statistiques stats = new TP1.Statistiques.Statistiques(new List<AbstractBillet> { billetUtilisateur }, loterie.BilletTire);
+        // Création des statistiques avec la liste des billets vendus (ici seulement le billet utilisateur)
+        TP1.Statistiques.Statistiques stats = new Statistiques.Statistiques(new List<AbstractBillet> { billetUtilisateur }, loterie.BilletTire);
         dictionaire.Add("statistiques", stats);
         
         // Créer la COR avec ses étapes.
@@ -96,7 +98,7 @@ class Program
 
         chainHandler.Handle(dictionaire);
         
-        // Affiche le résultat.
+        // Affiche le résultat de l'utilisateur.
         Console.WriteLine($"Billet utilisateur : {string.Join(",", billetUtilisateur.ListeNumero)}");
         Console.WriteLine($"Gain utilisateur : {billetUtilisateur.CalculerGainSiGagnant(loterie.BilletTire)}$");
     }

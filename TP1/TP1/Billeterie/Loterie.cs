@@ -55,8 +55,11 @@ public class Loterie
     /// </summary>
     public void LancerTirageCombinaison()
     {
-        AbstractBillet billetTire = new BilletCombinaison();
-        BilletTire = billetTire;
+        if (BilletTire == null)
+        {
+            AbstractBillet billetTire = new BilletCombinaison();
+            BilletTire = billetTire;
+        }
     }
 
     /// <summary>
