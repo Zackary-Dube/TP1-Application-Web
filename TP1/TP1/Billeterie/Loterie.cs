@@ -15,7 +15,15 @@ public class Loterie
     /// Liste des billets achetés pour la loterie
     /// </summary>
     private List<AbstractBillet> _listeBillets = new();
-    
+
+    /// <summary>
+    /// Getter public pour la liste de billets achetés pour la loterie
+    /// </summary>
+    public List<AbstractBillet> ListeBillets
+    {
+        get => _listeBillets;
+    }
+
     /// <summary>
     /// Billet tiré lors du tirage de la loterie
     /// </summary>
@@ -51,14 +59,19 @@ public class Loterie
     }
     
     /// <summary>
-    /// Lance le tirage de la loterie en générant un billet tiré
+    /// Lance le tirage de la loterie séléctionnant un billet aléatoire dans la liste de billets vendus
     /// </summary>
     public void LancerTirageCombinaison()
     {
         if (BilletTire == null)
         {
-            AbstractBillet billetTire = new BilletCombinaison();
-            BilletTire = billetTire;
+            if (ListeBillets.Count == 0)
+                throw new InvalidOperationException("Aucun billet vendu pour effectuer le tirage");
+
+            Random random = new Random();
+            int index = random.Next(ListeBillets.Count);
+
+            BilletTire = ListeBillets[index];
         }
     }
 

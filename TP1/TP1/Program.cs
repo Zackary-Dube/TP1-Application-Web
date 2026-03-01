@@ -85,9 +85,10 @@ class Program
         AbstractBillet billetUtilisateur = new BilletCombinaison();
         billetUtilisateur.ListeNumero = numerosUtilisateur.ToList();
         loterie.BilletTire = new BilletCombinaison(new List<int> { 1,2,3,4,5,9 });
+        loterie.AjouterBilletListe(billetUtilisateur);
         
-        // Création des statistiques avec la liste des billets vendus (ici seulement le billet utilisateur)
-        TP1.Statistiques.Statistiques stats = new Statistiques.Statistiques(new List<AbstractBillet> { billetUtilisateur }, loterie.BilletTire);
+        // Création des statistiques avec la liste des billets vendus.
+        TP1.Statistiques.Statistiques stats = new Statistiques.Statistiques(loterie.ListeBillets, loterie.BilletTire);
         dictionaire.Add("statistiques", stats);
         
         // Créer la COR avec ses étapes.
